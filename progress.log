@@ -1,0 +1,18 @@
+[2016-05-30 23:59:49] START
+[2016-05-31 00:00:22] CREATE Escultor.py: 0
+[2016-05-31 00:00:42] CREATE Artista.py: 0
+[2016-05-31 00:01:41] DELETE EsQltoR/controllers/Escultor.py: -1
+[2016-05-31 00:01:51] DELETE EsQltoR/controllers/Artista.py: -1
+[2016-05-31 00:02:28] CREATE EscultorController.py: 0
+[2016-05-31 00:02:37] CREATE ArtistaController.py: 0
+[2016-05-31 00:16:43] EDIT EsQltoR/controllers/EscultorController.py: 2
+[2016-05-31 00:20:02] EDIT EsQltoR/controllers/ArtistaController.py: 2
+[2016-05-31 00:22:33] CREATE EscultorController/index.html: 0
+[2016-05-31 00:23:19] CREATE ArtistaController/index.html: 0
+[2016-05-31 00:27:25] EDIT EsQltoR/views/ArtistaController/index.html: 4
+[2016-05-31 00:28:46] EDIT EsQltoR/views/EscultorController/index.html: 4
+[2016-05-31 00:31:02] CREATE artista.py: 0
+[2016-05-31 00:31:48] DELETE EsQltoR/models/artista.py: 0
+[2016-05-31 00:47:21] EDIT EsQltoR/models/db.py: 8
+[2016-05-31 00:50:52] EDIT EsQltoR/views/EscultorController/index.html: 0
+[2016-05-31 00:58:28] EDIT EsQltoR/models/db.py: -2
