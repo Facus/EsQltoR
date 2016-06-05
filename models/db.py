@@ -131,17 +131,6 @@ auth.settings.reset_password_requires_verification = True
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
 
-
-# Definición de tabla Escultores
-db.define_table('escultor',
-                Field('nombre'))
-
-db.escultor.nombre.requires = IS_NOT_EMPTY()
-
-
-
-# Definición de tabla Artistas
-db.define_table('artista',
-                Field('nombre'))
-
-db.artista.nombre.requires = IS_NOT_EMPTY()
+mail.settings.server = settings.email_server
+mail.settings.sender = settings.email_sender
+mail.settings.login = settings.email_login

@@ -1,7 +1,7 @@
 {{extend 'layout.html'}}
-<h1>Lista de Artistas</h1>
+<h1>Lista de Escultores</h1>
 <ul>
-{{for escultor in escultors:}}
-{{=LI(A(escultor.nombre, _href=URL("show", args=escultor.id)))}}
+{{for escultor in escultores:}}
+{{=LI(STRONG(escultor.f_escultor_nombre, _href=URL("show", args=escultor.id)))}}
 {{pass}}
 </ul>

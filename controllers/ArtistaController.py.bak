@@ -1,3 +1,5 @@
 # -*- coding: utf-8 -*-
-# intente algo como
-def index(): return dict(message="hello from ArtistaController.py")
+# Controlador de la Lista de Escultores.
+def index():
+    artistas = db().select(db.t_artistas.ALL,orderby=db.f_artista_id)
+    return dict(artistas=artistas)

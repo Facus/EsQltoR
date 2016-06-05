@@ -65,3 +65,89 @@ CREATE TABLE artista(
     nombre CHAR(512)
 );
 success!
+timestamp: 2016-06-02T10:04:08.077835
+CREATE TABLE t_escultores(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_escultor_id CHAR(512),
+    f_escultor_nombre CHAR(512),
+    f_escultor_descripcion CHAR(512),
+    f_escultor_premio CHAR(512),
+    f_escultor_contacto CHAR(512)
+);
+success!
+timestamp: 2016-06-02T10:04:08.251472
+CREATE TABLE t_escultores_archive(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_escultor_id CHAR(512),
+    f_escultor_nombre CHAR(512),
+    f_escultor_descripcion CHAR(512),
+    f_escultor_premio CHAR(512),
+    f_escultor_contacto CHAR(512),
+    current_record INTEGER REFERENCES t_escultores (id) ON DELETE CASCADE  
+);
+success!
+timestamp: 2016-06-02T10:04:08.377792
+CREATE TABLE t_esculturas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_escultura_id CHAR(512),
+    f_escultura_nombre CHAR(512),
+    f_escultura_descripcion CHAR(512),
+    f_escultura_imagen CHAR(512)
+);
+success!
+timestamp: 2016-06-02T10:04:08.513891
+CREATE TABLE t_esculturas_archive(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_escultura_id CHAR(512),
+    f_escultura_nombre CHAR(512),
+    f_escultura_descripcion CHAR(512),
+    f_escultura_imagen CHAR(512),
+    current_record INTEGER REFERENCES t_esculturas (id) ON DELETE CASCADE  
+);
+success!
+timestamp: 2016-06-02T10:04:08.647659
+CREATE TABLE t_sesion(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_user_email CHAR(512),
+    f_user_contrasenia CHAR(512),
+    f_user_nombre CHAR(512),
+    f_user_fechanacimiento CHAR(512)
+);
+success!
+timestamp: 2016-06-02T10:04:08.764385
+CREATE TABLE t_sesion_archive(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_user_email CHAR(512),
+    f_user_contrasenia CHAR(512),
+    f_user_nombre CHAR(512),
+    f_user_fechanacimiento CHAR(512),
+    current_record INTEGER REFERENCES t_sesion (id) ON DELETE CASCADE  
+);
+success!
+timestamp: 2016-06-02T11:05:23.755299
+CREATE TABLE t_artistas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_artista_id CHAR(512),
+    f_artista_nombre CHAR(512),
+    f_artista_descripcion CHAR(512),
+    f_artista_premio CHAR(512),
+    f_artista_contacto CHAR(512)
+);
+success!
+timestamp: 2016-06-02T11:05:24.018993
+CREATE TABLE t_artistas_archive(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    f_artista_id CHAR(512),
+    f_artista_nombre CHAR(512),
+    f_artista_descripcion CHAR(512),
+    f_artista_premio CHAR(512),
+    f_artista_contacto CHAR(512),
+    current_record INTEGER REFERENCES t_artistas (id) ON DELETE CASCADE  
+);
+success!
+timestamp: 2016-06-02T11:52:24.449027
+ALTER TABLE t_escultores ADD f_escultor_imagen CHAR(512);
+success!
+timestamp: 2016-06-02T11:52:24.593574
+ALTER TABLE t_escultores_archive ADD f_escultor_imagen CHAR(512);
+success!
